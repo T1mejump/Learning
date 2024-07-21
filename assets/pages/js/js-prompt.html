@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        .example-code {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .example-output {
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Tutorial</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../../pages/studies.html">Studies</a></li>
+                <li><a href="../../pages/html.html">HTML</a></li>
+                <li><a href="../../pages/css.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>JavaScript Example</h2>
+        <p>Below is a simple example of JavaScript code:</p>
+        <div class="example-code">
+            <pre>let name = prompt("What is your name?");</pre>
+        </div>
+        <p>Click the button below to see the prompt in action:</p>
+        <button onclick="showPrompt()">Click Me</button>
+        <br><br>
+        <div class="example-output" id="output"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Thomas Eagle</p>
+    </footer>
+
+    <script>
+        // JavaScript function to show prompt
+        function showPrompt() {
+            let name = prompt("What is your name?");
+            if (name) {
+                document.getElementById("output").innerHTML = `<strong>Hello, ${name}!</strong>`;
+            } else {
+                document.getElementById("output").innerHTML = "<strong>No name entered!</strong>";
+            }
+        }
+    </script>
+</body>
+</html>
